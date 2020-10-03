@@ -1,0 +1,24 @@
+{
+  "name": "getitdone",
+  "version": "1.0.0",
+  "description": "a little to do app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaydesai571/GetITDone.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jaydesai571/GetITDone/issues"
+  },
+  "homepage": "https://github.com/jaydesai571/GetITDone#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1"
+  }
+}
