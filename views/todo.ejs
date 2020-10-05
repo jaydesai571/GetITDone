@@ -2,26 +2,21 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Get IT Done</title>
-    <script
-  src="https://code.jquery.com/jquery-3.5.1.js"
-  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-  crossorigin="anonymous"></script>
+    <title>Home</title>
+<script src="https://code.jquery.com/jquery-1.12.3.js" integrity="sha256-1XMpEtA4eKXNNpXcJ1pmMPs8JV+nwLdEqwiJeCQEkyc=" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="/assets/styles.css" type="text/css" />
   </head>
   <body>
     <h1>Get IT Done</h1>
       <div id="todo-table">
-          <form class="" action="index.html" method="post">
+          <form method="post" action="/todo">
               <input type="text" name="item" placeholder="Add new item" required />
               <button type="submit">Add Item</button>
           </form>
-
           <ul>
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-            <li>Item 4</li>
+            <% for(i=0; i<todos.length; i++){ %>
+              <li><%= todos[i].item %></li>
+            <% } %>
           </ul>
       </div>
   </body>
