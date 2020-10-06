@@ -9,12 +9,12 @@
   <body>
     <h1>Get IT Done</h1>
       <div id="todo-table">
-          <form method="post" action="/todo">
-              <input type="text" name="item" placeholder="Add new item" required />
-              <button type="submit">Add Item</button>
+          <form method="post">
+            <input type="text" name="item" placeholder="Add new item" required />
+            <button type="submit">Add Item</button>
           </form>
           <ul>
-            <% for(i=0; i<todos.length; i++){ %>
+            <% for(i=0; i < todos.length; i++){ %>
               <li><%= todos[i].item %></li>
             <% } %>
           </ul>

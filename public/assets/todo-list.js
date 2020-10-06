@@ -6,7 +6,7 @@ $(document).ready(function(){
       var todo = {item: item.val()};
 
       $.ajax({
-        type: 'POST',
+        type: 'post',
         url: '/todo',
         data: todo,
         success: function(data){
@@ -22,7 +22,7 @@ $(document).ready(function(){
   $('li').on('click', function(){
       var item = $(this).text().replace(/ /g, "-");
       $.ajax({
-        type: 'DELETE',
+        type: 'delete',
         url: '/todo/' + item,
         success: function(data){
           //do something with the data via front-end framework
